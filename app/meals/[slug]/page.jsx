@@ -4,6 +4,7 @@ import classes from "./page.module.css";
 import { getMeal } from "@/lib/meals";
 
 const page = ({ params }) => {
+  console.log(params);
   const meal = getMeal(params.slug);
 
   if (!meal) {
